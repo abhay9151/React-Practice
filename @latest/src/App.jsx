@@ -5,10 +5,10 @@ const App = () => {
   return (
     <div className="Container">
 
-      <Card name="Love Babbar"  desc="desc1" />
-      <Card name="Love Babbar" desc="desc2" />
-      <Card name="Love Babbar" desc="desc3" />
-      <Card name="Love Babbar" desc="desc4" />
+      <Card name="Love Babbar"  desc="desc1" style={{ borderRadius: "20px" }} />
+      <Card name="Love Babbar" desc="desc2" style={{ borderRadius: "20px" }} />
+      <Card name="Love Babbar" desc="desc3" style={{ borderRadius: "20px" }} />
+      <Card name="Love Babbar" desc="desc4" style={{ borderRadius: "20px" }} />
 
 
     </div>
