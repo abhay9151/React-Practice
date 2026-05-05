@@ -2,23 +2,41 @@ import { useState } from 'react';
 import Loginbtn from './components/Loginbtn'
 import Logoutbtn from './components/Logoutbtn'
 const App = () => {
-  const[isLoggedIn,setLoggedIn]=useState(true);
-  if(isLoggedIn){
-    return (
-      <div>
-        <h1>Welcome to the website</h1>
-        <Logoutbtn setLoggedIn={setLoggedIn}/>
-      </div>
-    )
-  }
-  else{
+  const[isLoggedIn,setLoggedIn]=useState(false);
+  if (!isLoggedIn) {
     return (
       <div>
         <h1>Please login to continue</h1>
-        <Loginbtn setLoggedIn={setLoggedIn}/>
+        <Loginbtn setLoggedIn={setLoggedIn} />
       </div>
-    )
+    );
   }
+
+return (
+  <div>
+    <h1>Welcome Everyone to Codehelp Web dev course</h1>
+    <div>
+      {isLoggedIn && <Logoutbtn />}
+    </div>
+  </div>
+)
+
+  // if(isLoggedIn){
+  //   return (
+  //     <div>
+  //       <h1>Welcome to the website</h1>
+  //       <Logoutbtn setLoggedIn={setLoggedIn}/>
+  //     </div>
+  //   )
+  // }
+  // else{
+  //   return (
+  //     <div>
+  //       <h1>Please login to continue</h1>
+  //       <Loginbtn setLoggedIn={setLoggedIn}/>
+  //     </div>
+  //   )
+  // }
 }
 
 export default App
