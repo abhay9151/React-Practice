@@ -42,12 +42,20 @@ To keep components in sync
 Example:
 
 Multiple input fields sharing the same value
+
+
 🚀 Key Learnings
 Understanding component-based architecture
+
 Managing state effectively using hooks
+
 Passing and handling data using props
+
 Writing clean and reusable UI logic
+
 Synchronizing components using state lifting
+
+
 🛠️ Tech Stack
 React.js
 JavaScript (ES6+)
