@@ -1,0 +1,12 @@
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    background-color: beige;
+}
+.active{
+    border : 5px solid rgb(211, 15, 15);
+    padding: 5px;
+    
+}
